@@ -4,16 +4,30 @@
 <head>
     <meta charset="utf-8">
     <title>Task List</title>
-    <script src="scripts/app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>
-        Task List
-    </h1>
-
-
-
+    <div class="mytasks">
+        <h1 class="heading-primary">My Tasks</h1>
+        <div class="mytasks__field">
+            <label for="task_name" class="mytasks__label">Add a new task</label>
+            <input type="text" name="task_name" id="task_name" class="mytasks__input" placeholder="Enter task here">
+            <a href="#" class="btn btn--add" id="mytasks__add-btn">Add Task</a>
+        </div>
+        <div class="mytasks__card">
+            <h2 class="heading-secondary task-title">Task List</h2>
+            <ul class="mytasks__list">
+                <li class="mytasks__item">
+                    Task1
+                    <a href="#" class="delete-btn">&Cross;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
+<script src="scripts/app.js"></script>
 
 </html>
