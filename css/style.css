@@ -10,6 +10,12 @@ color-accent: #1DB954
     box-sizing: border-box;
 }
 
+::selection {
+    color: #191414;
+    background: #4ff78a;
+    text-shadow: none;
+}
+
 body {
     font-size: 20px;
     font-weight: 300;
